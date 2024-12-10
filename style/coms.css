@@ -1,0 +1,45 @@
+h1{
+    padding-block-end: 20px;
+}
+
+.logo1{
+    width: 140px;
+    padding-inline-start: 25vi;
+}
+
+table{
+    display:flex;
+    justify-content: center;
+}
+
+td{
+    padding-block: .5vi;
+    padding-inline: .5vi;
+    border-block-end: 2px solid var(--accent1)
+}
+
+th{
+    font-size:20px;
+    text-decoration: underline var(--accent2) ;
+    border: 3px solid var(--accent1)
+}
+
+#blender{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:300px;
+}
+
+@media screen and (min-width: 350px){
+
+    .section{
+        margin: 15px;
+    }
+   #blender{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:300px;
+   }
+}

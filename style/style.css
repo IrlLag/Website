@@ -1,0 +1,345 @@
+*{
+    font-family:sans-serif;
+    padding-inline: 10px;
+}
+:root{
+    --background:rgb(40 40 40);
+    --background2: rgb(5 5 5);
+    --background-border:rgb(20, 30, 40);
+    --accent1:#e100ff;
+    --accent2:#00d5ff;
+
+}
+body{
+    background: linear-gradient(to bottom, var(--background), var(--background2));
+    background-attachment:fixed;
+    color: white;
+
+}
+
+.banner{
+    background-color:var(--background-border);
+    border: 10px solid var(--accent1);
+}
+
+h2{
+    font-family:"oswald", sans-serif;
+    text-align: center;
+    font-weight: bolder;
+    text-decoration: underline var(--accent2);
+}
+
+.banner h2{
+    font-size:20px;
+    font-style:italic;
+    text-decoration: underline var(--accent2);
+    padding:0;
+    letter-spacing:1.5px;
+}
+
+h1{
+    font-size: 35px;
+    font-family: "oswald", sans-serif;
+    letter-spacing: 5px;
+    text-decoration: underline var(--accent2);
+    border: 60px;
+    text-align: center;
+}
+
+nav a{
+    list-style-type: none;
+    
+    border: solid var(--accent2);
+    
+    padding: 3px;
+    border-radius: 5px;
+    box-shadow: 3px 3px #215866;
+    
+    color: white;
+    background-color:rgba(33, 61, 85, 0.699);
+    text-decoration: none;
+}
+
+.links{
+    text-align:center;
+    font-family:"Oswald";
+    border: 8px solid var(--accent1);
+    
+    margin-block-start:10px;
+    padding:10px;
+    background-color:var(--background-border);
+    display:grid;
+    grid-template-columns: 22vi 22vi;
+    grid-template-rows: 40px 50px 40px;
+    justify-content: center;
+    gap:10px;
+}
+
+#link2{
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#link3{
+    grid-row: 2;
+}
+#link4{
+    grid-column: 2;
+    grid-row: 2;
+}
+
+#link5{
+    grid-column: span 2;
+    grid-row:3;
+    margin-inline: 40px;
+}
+
+.endLinks {
+   text-align:center;
+   padding: 20px;
+  border:none;
+}
+
+footer li{
+    list-style-type:none;
+    font-family:"Oswald";
+
+}
+
+footer a{
+    text-decoration: none;
+    color:white;
+    
+}
+
+footer{
+    text-align:center;
+}
+
+.section{
+    margin:25px;
+    border: 10px solid;
+    border-image: linear-gradient(to bottom right, var(--accent1) 25%, var(--accent2) 100%) 1; 
+
+    background-color: rgb(20, 30, 40);
+    transition: all 1s ease-in;
+}
+
+.section h1{
+    margin-inline-start: 45px;
+}
+
+.section2{
+    padding:5px;
+
+    margin:25px;
+    border: 10px solid;
+    border-image: linear-gradient(to bottom left,var(--accent1) 25%, var(--accent2) 100%) 1; 
+
+    background-color: var(--background-border);
+
+    transition: all 1s ease-in;
+}
+.section2 li{
+    padding: 10px;
+}
+.section2 ul {
+    list-style-type: none;
+}
+
+header img{
+    width: 150px;
+    padding-left:18%;
+}
+
+.section img, .section2 img{
+    width:150px;
+    padding-inline-start: 7vi;
+}
+
+
+
+/* End of general stuff and start of the about me stuff*/
+
+#contact{
+    list-style-type: none;
+    
+    border: solid var(--accent2);
+    
+    padding: 3px;
+    border-radius: 5px;
+    
+    color: white;
+    background-color:rgba(33, 61, 85, 0.699);
+    text-decoration: none;
+}
+
+#about{
+    line-height: 30px;
+}
+
+.portfolio{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: none;
+    align-content: space-evenly;
+    gap:20px;
+    align-items: center;  
+}
+#item1 {
+   width:40vi;
+   margin-inline-start: 15vi;
+}
+#item2 {
+    width:40vi;
+    margin-inline-start: 15vi;
+
+}
+#item3 {
+    width:40vi;
+    margin-inline-start: 15vi;
+
+}
+#item4 {
+    width:50vi;
+    margin-inline-start: 11vi;
+}
+
+li{
+    list-style-type: none;
+}
+
+#logo{
+    display:flex;
+    justify-content: center;
+}
+/*Start of media queries */
+@media screen and (min-width: 768px){
+header{ 
+    position: relative;
+    overflow: auto;
+    padding-block-start: 30px;
+}
+
+a:hover{
+    background-color:rgb(41, 109, 132);
+    box-shadow: none;
+}
+
+header img{
+    width:150px;
+}
+#subtitle{
+    z-index:1;
+}
+#logo{
+    position:absolute;
+   inset-inline-start: 75vi;
+   inset-block-end: 6%;
+   z-index: 0;
+
+   padding-inline-start:0;
+}
+.links{
+    display:block;
+   text-align: center;
+}
+#link1{
+    margin-inline:3vi;
+}
+#link2{
+    margin-inline: 2vi;
+}
+
+#link3{
+    margin-inline: 2vi;
+}
+#link4{
+    margin-inline: 2vi;
+
+}
+
+.section{
+    margin-inline: 20%;
+    position:relative;
+    padding: 25px 0 25px 0;
+    p{
+        margin-inline-end: 15vi;
+        font-size: 1.2em;
+    }
+    h2{
+        font-size:2em;
+        margin-block-start: -10px;
+    }
+    img{
+        position:absolute;
+        inset-inline-start: 37vi;
+        inset-block-end: 6%;
+        width:12vi;
+        display: flex;
+        padding-inline-start: 2vi;
+       
+    }
+}
+
+.section2{
+    margin-inline:20%;
+    position:relative;
+    img{
+        width: 15vi;
+        position:absolute;
+        inset-inline-start: 35vi;
+        inset-block-end: 50px;
+        display: flex;
+        padding-inline-start: 2vi;
+
+    }
+    p{
+        margin-inline-end: 40%;
+        font-size: 1.2em;
+    }
+    h2{
+        font-size:2em;
+        margin-block-start: 2px;
+    }
+}
+.section:hover{
+    border: 10px solid;
+    border-image:linear-gradient(to bottom right, var(--accent2) 25%, var(--accent1) 100%) 1;  
+    transition: all 1s ease-in;
+}
+
+.section2:hover{
+    border: 10px solid;
+    border-image:linear-gradient(to bottom left,var(--accent2) 25%, var(--accent1) 100%) 1; 
+    transition: all 1s ease-in;
+}
+.portfolio{
+    
+    grid-template-columns: 22vi 22vi 22vi 22vi;
+    grid-template-rows: none;
+    align-content: space-evenly;
+}
+#item1 {
+    width:12vi;
+    margin-inline-start: 20%;
+}
+ #item2 {
+    width:12vi;
+    margin-inline-start:0;
+
+ }
+ #item3 {
+    width:12vi;
+    margin-inline-start: 0;
+}
+ #item4 {
+    width:12vi;
+    margin-inline-start: 0;
+ }
+
+ #prices{
+    margin-inline: 30vi;
+    margin-inline-start: 30vi;
+}
+}
