@@ -1,0 +1,91 @@
+label{
+    padding:10px;
+    text-align: center;
+}
+form{
+    display: grid;
+    grid-template-rows: 40 30 30 30;
+    gap:2px;
+}
+.section{
+   margin:0;
+   margin-block-start: 25px;
+   padding-block: 10px;
+   padding-inline: 0;
+}
+select{
+    text-align: center;
+    margin-inline:50px;
+
+    background-color: rgba(33, 61, 85, 0.699);
+    color: white;
+    border: 2px solid var(--accent2);
+}
+
+input{
+    height: fit-content;
+    align-items: center;
+
+    background-color: rgba(33, 61, 85, 0.699);
+    color: white;
+    border: 2px solid var(--accent2);
+    
+}
+textarea{
+    height: fit-content;
+    background-color: rgba(33, 61, 85, 0.699);
+    color: white;
+    border: 2px solid var(--accent2);
+    resize: none;
+}
+
+button{
+    margin-block-start: 20px;
+    margin-block-end: 5px;
+    width: fit-content;
+    margin-inline: auto;
+    background-color: rgba(33, 61, 85, 0.699);
+    border: 2px solid var(--accent2);
+    color: white;
+}
+/*start of media query*/
+@media screen and (min-width:768px){
+
+form{
+    grid-template-columns: 0.5fr 0.5fr;
+    grid-template-rows: 40 30 30 30 30;  
+}
+.section{
+    margin-inline: 15vi;
+}
+.label{
+    grid-column: 1;
+    text-align: center;
+}
+
+.input{
+    grid-column:2;
+}
+select{
+    text-align: center;
+    margin: 20px;
+    
+}
+input{
+    margin:auto;
+    width:18vi;
+    text-align: center;
+}
+textarea{
+    grid-column: span 2;
+    margin-inline: auto;
+}
+#desc{
+    text-align: center;
+    grid-column: span 2;
+}
+button{
+    text-align: center;
+    grid-column: span 2;
+}
+}
